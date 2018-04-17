@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- <button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration -->
+</view>
+
+
+<view class="func-area">
+  <view bindtap="showCategories">
+    <image src="../../images/icon_all.png" mode="aspectFill" class="orange" />
+    <text>全部分类</text>
+  </view>
+
+  <view bindtap="showNotice">
+    <image src="../../images/icon_seller.png" mode="aspectFill" class="orange" />
+    <text>通知</text>
+  </view>
+
+
+  <view bindtap="showGroupList">
+    <image src="../../images/icon_shopping.png" mode="aspectFill" class="blue" />
+    <text>团购</text>
+  </view>
+
+
+  <view bindtap="showCarts">
+    <image src="../../images/icon_carticon.png" mode="aspectFill" class="orange" />
+    <text>购物车</text>
+  </view>
+
+
+</view>

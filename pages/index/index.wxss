@@ -1,0 +1,48 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/*功能区*/
+.func-area {
+	display: flex;
+	flex-direction: row;
+	margin: 30rpx 0;
+	padding-top: 10rpx;
+	background: white;
+}
+
+.func-area view {
+	width: 25%;
+	text-align: center;
+}
+
+.func-area text{
+	display: block;
+	color: #6c6c6c;
+	font-size: 30rpx;
+	line-height: 50rpx;
+}
+
+.func-area image {
+	width: 125rpx;
+	height: 125rpx;
+	
+}
