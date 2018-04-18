@@ -1,5 +1,5 @@
 <view wx:if="{{!empty}}" class="carts-list">
-  <view wx:for="{{notices}}" wx:key="objectId" class="carts-item" data-object-id="{{item.goods_id}}" bindtap="tapGoods">
+  <view wx:for="{{notices}}" wx:key="objectId" class="carts-item" data-object-id="{{item.id}}" bindtap="tapGoods">
     <!-- <view>
       <image class="carts-image" src="{{item.image}}" mode="aspectFill" />
     </view> -->
@@ -9,7 +9,7 @@
 
       <text >{{item.content}}</text>
 
-      <text class='carets-right'>{{item.date}}</text>
+      <text >{{item.date}}</text>
       <!-- 销量与评价 -->
       <!-- <view class="goods-score">
         <text>已售{{item.sales_sum}}件</text>
